@@ -14,22 +14,26 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 md:hidden">
+        <svg  id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-          
-         <ul class="flex gap-5 text-grey-600-hidden md:flex">
-            <li>
-              <a class="hover:underline hover:text-black" href="index.html"> home </a>
-           </li>
-            <li>
-                <a class="hover:underline hover:text-black" href="product.html">products</a>
-            </li>
-            <li>
-                <a class="hover:underline hover:text-black" text href="contact.html">contact</a>
-            </li>
-         </ul>
+          <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li><a href="./contact.html" class="hover:text-black hover:underline">contact</a></li>
+            <li><a href="./index.html" class="hover:text-black hover:underline">home</a></li>
+            <li><a href="./product.html" class="hover:text-black hover:underline">product</a></li>
+          </ul>          
     </nav>
+    <!--sidenavbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0 transition-all duration-1000"  style="width:50%; height: 100vh; right:-50%">
+        <div class="text-right p-5">
+            <p id="close"class="inline cursor-pointer">x</p>
+        </div>
+              <ul class="flex-col gap-10 items-center text-gray-600">
+                <li><a href="./contact.html" class="hover:text-black hover:underline">contact</a></li>
+                <li><a href="./index.html" class="hover:text-black hover:underline">home</a></li>
+                <li><a href="./product.html" class="hover:text-black hover:underline">product</a></li>
+              </ul>          
+    </section>
     <!-- header section-->
     <section  class="bg-green-100 p-4 md:p-10 flex justify-center">
         <div>
@@ -137,5 +141,6 @@ https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
         <p>We cannot solve problems by using the same kind of thinking we used when we created them</p>
         <p>@ 2021 Greenday.com</p>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
